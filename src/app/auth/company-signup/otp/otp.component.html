@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="col-12">
+                <a [routerLink]="['/auth/signup-with-abshar']" class="text-decoration-none small">
+                    < Back
+                </a>
+            </div>
+            <div class="col-12 mt-3">
+                <h3>Mobile One Time Password</h3>
+            </div>
+            <div class="col-12 mt-3">
+                <div class="card form-card">
+                    <h5 class="my-2">Sign up Using <img src="../../../assets/images/abshar_logo.png" width="60px"></h5>
+                    <span class="small my-2">
+                        We have sent you a code on your email +1234567. Please enter that code below
+                    </span>
+                    <span class="small my-1">Please enter OTP below</span>
+                    <ng-otp-input class="text-center" (onInputChange)="onOtpChange($event)"  [config]="{length:4}"></ng-otp-input>
+                    <span class="small my-2 text-muted">
+                        If you didn't receive a code! <b>Resend in 00:54</b>
+                    </span>
+                    <a routerLink="/auth/setup-login-credentials">
+                        <button class="btn btn-primary my-3" style="width: 100%;">Next</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

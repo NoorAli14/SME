@@ -1,0 +1,76 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="col-12">
+                <a [routerLink]="['/auth/setup-login-credentials']" class="text-decoration-none small">
+                    < Back
+                </a>
+            </div>
+            <div class="col-12 mt-3">
+                <h3>Required Consents</h3>
+                <span class="small my-2">
+                    With data available on the governmental portals we will reduce the time to fill application to the minimum
+                </span>
+            </div>
+            <div class="col-12 mt-3">
+                <div class="card form-card px-5">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <span class="form-check-label small" for="flexCheckChecked">
+                            I agree to process and store data from the following sources and use according to 
+                            <a [routerLink]="['/auth/setup-login-credentials']" class="text-decoration-none small">Terms and Conditions</a>,
+                            <a [routerLink]="['/auth/setup-login-credentials']" class="text-decoration-none small">Privacy Policy</a>, and 
+                            <a [routerLink]="['/auth/setup-login-credentials']" class="text-decoration-none small">Data Policy</a>.​
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <img src="../../../../assets/images/image 103.png" width="50px" class="mx-3">
+                        <img src="../../../../assets/images/image 104.png" width="50px" class="mx-3">
+                        <img src="../../../../assets/images/image 105.png" width="50px" class="mx-3">
+                        <img src="../../../../assets/images/image 106.png" width="50px" class="mx-3">
+                        <img src="../../../../assets/images/image 107.png" width="50px" class="mx-3">
+                        <img src="../../../../assets/images/image 108.png" width="50px" class="mx-3">
+                        <img src="../../../../assets/images/image 109.png" width="50px" class="mx-3">
+                        <img src="../../../../assets/images/image 110.png" width="50px" class="mx-3">
+                        <img src="../../../../assets/images/image 112.png" width="50px" class="mx-3">
+                    </div>
+                    <button class="btn btn-primary my-3" style="width: 100%;" (click)="open(content)">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<ng-template #content let-modal>
+    <div class="card form-card p-0">
+        <div class="text-center p-5">
+            <img src="../../../../assets/images/tick.png" width="75px">
+            <h4 class="mt-2">Signed Up Successfully</h4>
+            <span class="small">You have successfully signed up!!</span>
+        </div>
+        <div class="px-4 py-5" style="background-color: #E5EDFD;">
+            <h6>Complete Company Profile</h6>
+            <span class="small">
+                Provide necessary financial details and attach required documents
+            </span>
+            <ul>
+                <li>
+                    <span class="small">Get your financing easier</span>
+                </li>
+                <li>
+                    <span class="small">Have your instant eligibility checks</span>
+                </li>
+            </ul>
+            <span class="small">
+                Publish open application and wait for banks to offer financing or apply directly 
+            </span>
+            <div>
+                <a routerLink="/auth/signup-successfully">
+                    <button class="btn btn-primary my-3">Complete Profile</button>
+                </a>
+                <a routerLink="/auth/signup-successfully">
+                    <button class="btn btn-outline-primary m-3">Go to dashboard</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</ng-template>
