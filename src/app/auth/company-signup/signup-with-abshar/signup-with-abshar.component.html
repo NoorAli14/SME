@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="col-12">
+                <a [routerLink]="['/auth/company-signup']" class="text-decoration-none small">
+                    < Back
+                </a>
+            </div>
+            <div class="col-12 mt-3">
+                <h3>Sign Up with Abshar</h3>
+            </div>
+            <div class="col-12">
+                <span class="small">Get financing in just few clicks</span>
+            </div>
+            <div class="col-12 mt-3">
+                <div class="card form-card">
+                    <div class="text-center my-2">
+                        <img src="../../../assets/images/abshar_logo.png" width="100px">
+                    </div>
+                    <form>
+                        <div class="form-group my-2">
+                            <span for="cr_number" class="small" style="line-height: 3;">
+                                CR Number&nbsp;
+                                <img src="../../../../assets/images/info_icon.png" width="13px">
+                            </span>
+                            <input type="text" class="form-control" id="cr_number">
+                        </div>
+                        <div class="form-group my-2">
+                            <span for="phone" class="small" style="line-height: 3;">Phone</span>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <img src="../../../../assets/images/saudia_flag.png">
+                                        &nbsp;+966
+                                    </span>
+                                </div>
+                                <input type="number" class="form-control" aria-label="Text input with dropdown button">
+                            </div> 
+                        </div>
+                        <div class="form-group my-2">
+                            <span for="id_number" class="small" style="line-height: 3;">
+                                National ID Number&nbsp;
+                                <img src="../../../../assets/images/info_icon.png" width="13px">
+                            </span>
+                            <input type="text" class="form-control" id="id_number">
+                        </div>
+                        <div class="form-group my-2">
+                            <span for="dob" class="small" style="line-height: 3;">Date of Birth</span>
+                            <input type="date" class="form-control" id="dob">
+                        </div>
+                        <div>
+                            <a routerLink="/auth/otp">
+                                <button class="btn btn-primary my-3" style="width: 100%;">Next</button>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

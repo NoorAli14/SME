@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    font-family: 'Circular Std';
+    font-style: normal;
+}
+
+body{
+    background: #EAEAEA;
+}
+
+.text-blue{
+    color: #085fde;
+}
+
+.card-blue{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-color: #085fde !important;
+}
+
+.form-control, .input-group-text{
+    border: 1px solid #131314;
+    padding: 10px 15px;
+}
+
+.input-group-text{
+    border-radius: 5px 0px 0px 5px;
+    background: #ffffff;
+}
+
+.form-card{
+    padding: 30px 60px;
+}
+
+.card{
+    border: 1px solid #EAEAEA;
+    border-radius: 16px;
+}
+
+.otp-input{
+    width: 20% !important;
+}
+
+.blur{
+    &:not(.card){
+        filter: blur(3px);
+    }
+  }
