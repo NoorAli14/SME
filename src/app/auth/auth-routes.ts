@@ -6,15 +6,15 @@ export const authRoutes: Routes = [
     loadComponent: () =>
       import('./auth.component').then((m) => m.AuthComponent),
     children: [
+      // {
+      //   path: 'signup',
+      //   loadComponent: () =>
+      //     import('./signup/signup.component').then(
+      //       (c) => c.SignupComponent
+      //     ),
+      // },
       {
         path: 'signup',
-        loadComponent: () =>
-          import('./signup/signup.component').then(
-            (c) => c.SignupComponent
-          ),
-      },
-      {
-        path: 'choose-signup-option',
         loadComponent: () =>
           import('./choose_signup/choose_signup.component').then(
             (c) => c.ChooseSignupComponent
@@ -71,7 +71,7 @@ export const authRoutes: Routes = [
       },
       {
         path: '',
-        redirectTo: 'registration',
+        redirectTo: 'signup',
         pathMatch: 'full',
       },
     ],

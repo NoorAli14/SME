@@ -1,2 +1,7 @@
-<p>features works!</p>
-<button type="button" class="btn btn-outline-primary">click me</button>
+<div class="d-flex flex-row bg-light">
+    <app-side-bar></app-side-bar>
+    <div class="flex-fill">
+        <app-header></app-header>
+        <router-outlet></router-outlet>
+    </div>
+</div>

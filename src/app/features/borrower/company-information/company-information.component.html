@@ -1,0 +1,70 @@
+<section class="company-info mx-3">
+    
+    <h1 class="fw-semibold my-4">Company Information</h1>
+
+    <div class="border rounded p-4 bg-white w-100">
+
+        <ul ngbNav #nav="ngbNav" class="nav-tabs nav-pills border-0 bg-light p-2 fs-14">
+            <li ngbNavItem>
+              <button ngbNavLink>
+                Company Details
+            </button>
+              <ng-template ngbNavContent>
+                <app-company-details></app-company-details>
+              </ng-template>
+            </li>
+            <li ngbNavItem>
+              <button ngbNavLink>
+                Address
+              </button>
+              <ng-template ngbNavContent>
+                <app-address></app-address>
+              </ng-template>
+            </li>
+            <li ngbNavItem>
+              <button ngbNavLink>
+                Ownership
+              </button>
+              <ng-template ngbNavContent>
+                <app-ownership></app-ownership>
+              </ng-template>
+            </li>
+            <li ngbNavItem>
+              <button ngbNavLink>
+                Management Personnel
+              </button>
+              <ng-template ngbNavContent>
+                <app-management-personnel></app-management-personnel>
+              </ng-template>
+            </li>
+            <li ngbNavItem>
+              <button ngbNavLink>
+                Subsidiaries
+              </button>
+              <ng-template ngbNavContent>
+                <app-subsidiaries></app-subsidiaries>
+              </ng-template>
+            </li>
+            <li ngbNavItem>
+              <button ngbNavLink>
+                Banking Relationship
+              </button>
+              <ng-template ngbNavContent>
+                <app-banking-relationship></app-banking-relationship>
+              </ng-template>
+            </li>
+            <li ngbNavItem>
+              <button ngbNavLink>
+                Financial Information
+              </button>
+              <ng-template ngbNavContent>
+                <app-financial-information></app-financial-information>
+              </ng-template>
+            </li>
+          </ul>
+
+          <div class="py-4" [ngbNavOutlet]="nav"></div>
+
+    </div>
+
+</section>

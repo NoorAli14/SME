@@ -1,0 +1,72 @@
+<section class="home mx-3">
+    
+        <h1 class="fw-semibold my-4">Home</h1>
+        
+        <ul ngbNav #nav="ngbNav" class="nav-tabs nav-pills border-0">
+            <li ngbNavItem>
+              <button ngbNavLink><img src="./assets/icons/navlink-home.svg" alt="">Offer Letters (3)</button>
+              <ng-template ngbNavContent>
+                <div class="d-flex justify-content-between">
+                    <h3 class="pb-3">Offer Letters</h3>
+                    <div>
+                        <button class="btn btn-outline-primary"
+                        routerLink='/compare-offers' routerLinkActive="active">Compare Offers</button>
+                    </div>
+                </div>
+              </ng-template>
+            </li>
+            <li ngbNavItem>
+              <button ngbNavLink>
+                <img src="./assets/icons/navlink-home.svg" alt="" class="me-2">Pre-Approvals
+              </button>
+              <ng-template ngbNavContent>
+                <h3 class="pb-3">Pre-Approvals</h3>
+              </ng-template>
+            </li>
+            <li ngbNavItem>
+              <button ngbNavLink>
+                <img src="./assets/icons/navlink-home.svg" alt="" class="me-2">Announcements
+              </button>
+              <ng-template ngbNavContent>
+                <h3 class="pb-3">Announcements</h3>
+              </ng-template>
+            </li>
+            <li ngbNavItem>
+              <button ngbNavLink>
+                <img src="./assets/icons/navlink-home.svg" alt="" class="me-2">Information Missing
+              </button>
+              <ng-template ngbNavContent>
+                <h3 class="pb-3">Information Missing</h3>
+              </ng-template>
+            </li>
+            <li ngbNavItem>
+              <button ngbNavLink>
+                <img src="./assets/icons/navlink-home.svg" alt="" class="me-2">Offers Expiring
+              </button>
+              <ng-template ngbNavContent>
+                <h3 class="pb-3">Offers Expiring</h3>
+              </ng-template>
+            </li>
+          </ul>
+
+        <div class="d-flex my-4">
+    
+            <div class="border rounded p-3 flex-fill">
+
+                <div [ngbNavOutlet]="nav"></div>
+    
+                <app-finance-brief [heading]="'Green Bank - POS Finance'" [imageUrl]="'./assets/company/company-1.svg'"></app-finance-brief>
+                <app-finance-brief [heading]="'UVW - POS Finance'" [imageUrl]="'./assets/company/company-2.svg'"></app-finance-brief>
+                <app-finance-brief [heading]="'XYZ Bank-Invoice Finance'" [imageUrl]="'./assets/company/company-3.svg'"></app-finance-brief>
+        
+            </div>
+
+            <div class="flex-fill ms-3 option-bar">
+
+                <app-finance-option></app-finance-option>
+                
+            </div>
+
+        </div>
+
+</section>

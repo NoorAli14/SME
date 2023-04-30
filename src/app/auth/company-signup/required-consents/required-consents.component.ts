@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { ModalDismissReasons, NgbDatepickerModule, NgbModal, NgbModalConfig } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -12,7 +12,7 @@ import { ModalDismissReasons, NgbDatepickerModule, NgbModal, NgbModalConfig } fr
 })
 export class RequiredConsentsComponent {
 
-	constructor(config: NgbModalConfig, private modalService: NgbModal) {
+	constructor(config: NgbModalConfig, private modalService: NgbModal, private _router: Router) {
 		// customize default values of modals used by this component tree
 		config.backdrop = 'static';
 		config.keyboard = false;
@@ -21,4 +21,10 @@ export class RequiredConsentsComponent {
 	open(content: any) {
 		this.modalService.open(content, { size: 'lg' });
 	}
+
+	goToDashboard(){
+		this.modalService.dismissAll();
+		this._router.navigate(['/home'])
+	}
+
 }
