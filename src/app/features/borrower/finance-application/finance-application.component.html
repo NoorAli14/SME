@@ -1,1 +1,133 @@
-<p>finance-application works!</p>
+<section class="finance-application mx-3 mb-3">
+    
+    <h1 class="fw-semibold my-4">Home</h1>
+    
+    <ul ngbNav #nav="ngbNav" class="nav-tabs nav-pills border-0">
+        <li ngbNavItem>
+          <button ngbNavLink><img src="./assets/icons/navlink-home.svg" alt="">All Applications​</button>
+          <ng-template ngbNavContent>
+            <div class="d-flex justify-content-between">
+                <h3 class="pb-3">All Applications​</h3>
+                <div>
+                    <button class="btn btn-outline-primary"
+                    routerLink='/compare-offers' routerLinkActive="active">New Applications</button>
+                </div>
+            </div>
+          </ng-template>
+        </li>
+        <li ngbNavItem>
+          <button ngbNavLink>
+            <img src="./assets/icons/navlink-home.svg" alt="" class="me-2">Draft
+          </button>
+          <ng-template ngbNavContent>
+            <h3 class="pb-3">Draft</h3>
+          </ng-template>
+        </li>
+        <li ngbNavItem>
+          <button ngbNavLink>
+            <img src="./assets/icons/navlink-home.svg" alt="" class="me-2">In-process​
+          </button>
+          <ng-template ngbNavContent>
+            <h3 class="pb-3">In-process​</h3>
+          </ng-template>
+        </li>
+        <li ngbNavItem>
+          <button ngbNavLink>
+            <img src="./assets/icons/navlink-home.svg" alt="" class="me-2">Processed
+          </button>
+          <ng-template ngbNavContent>
+            <h3 class="pb-3">Processed</h3>
+          </ng-template>
+        </li>
+        <li ngbNavItem>
+          <button ngbNavLink>
+            <img src="./assets/icons/navlink-home.svg" alt="" class="me-2">Information Required
+          </button>
+          <ng-template ngbNavContent>
+            <h3 class="pb-3">Information Required</h3>
+          </ng-template>
+        </li>
+        <li ngbNavItem>
+          <button ngbNavLink>
+            <img src="./assets/icons/navlink-home.svg" alt="" class="me-2">Rejected​
+          </button>
+          <ng-template ngbNavContent>
+            <h3 class="pb-3">Rejected​</h3>
+          </ng-template>
+        </li>
+      </ul>
+
+    <div class="d-flex my-4">
+
+        <div class="border rounded p-3 flex-fill bg-white">
+
+            <div [ngbNavOutlet]="nav"></div>
+
+            <div class="table-responsive my-3">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Date Names</th>
+                            <th>ID Number</th>
+                            <th>Bank Name(s)</th>
+                            <th>Status</th>
+                            <th>Remarks</th>
+                            <th class="text-center">Actions</th>
+                        </tr>
+                    </thead>
+        
+                    <tbody>
+                        <tr>
+                            <td>31-Jan-2023​ Ali</td>
+                            <td>FE-PF-31012023-001</td>
+                            <td>Green Bank</td>
+                            <td>In-process</td>
+                            <td>Awaiting finance processing</td>
+                            <td class="text-center">
+                                <img class="mx-2" src="./assets/icons/view.svg" alt="">
+                                <img class="mx-2" src="./assets/icons/edit.svg" alt="">
+                                <img class="mx-2" src="./assets/icons/delete.svg" alt="">
+                            </td>
+                        </tr>
+        
+                        <tr>
+                            <td>31-Jan-2023​ Ali</td>
+                            <td>FE-PF-31012023-002</td>
+                            <td>-</td>
+                            <td>In-process</td>
+                            <td>Awaiting offers from banks</td>
+                            <td class="text-center">
+                                <img class="mx-2" src="./assets/icons/view.svg" alt="">
+                                <img class="mx-2" src="./assets/icons/edit.svg" alt="">
+                                <img class="mx-2" src="./assets/icons/delete.svg" alt="">
+                            </td>
+                        </tr>
+        
+                        <tr>
+                            <td>31-Jan-2023​ Ali</td>
+                            <td>FE-PF-31012023-003</td>
+                            <td>-</td>
+                            <td>In-process</td>
+                            <td>Compare finance offers</td>
+                            <td class="text-center">
+                                <img class="mx-2" src="./assets/icons/view.svg" alt="">
+                                <img class="mx-2" src="./assets/icons/edit.svg" alt="">
+                                <img class="mx-2" src="./assets/icons/delete.svg" alt="">
+                            </td>
+                        </tr>
+        
+                    </tbody>
+                </table>
+            </div>
+    
+        </div>
+
+        <div class="flex-fill ms-3 option-bar">
+
+            <app-finance-option></app-finance-option>
+            
+        </div>
+
+    </div>
+
+</section>
