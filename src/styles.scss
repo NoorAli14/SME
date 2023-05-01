@@ -82,3 +82,12 @@ body{
         }
     }
 }
+
+.modal-backdrop{
+    --bs-backdrop-bg: #fff;
+    --bs-backdrop-opacity: 0.9;
+}
+
+.border-dashed{
+    border: 1px dashed;
+}

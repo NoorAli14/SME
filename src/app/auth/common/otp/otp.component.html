@@ -2,7 +2,7 @@
     <div class="row justify-content-center">
         <div class="col-md-6">
             <div class="col-12">
-                <a [routerLink]="['/auth/signup-with-abshar']" class="text-decoration-none small">
+                <a [routerLink]="param == 'company' ? ['/auth/signup-with-abshar'] : ['/auth/signup']" class="text-decoration-none small">
                     < Back
                 </a>
             </div>
@@ -11,7 +11,7 @@
             </div>
             <div class="col-12 mt-3">
                 <div class="card form-card">
-                    <h5 class="my-2">Sign up Using <img src="../../../assets/images/abshar_logo.png" width="60px"></h5>
+                    <h5 class="my-2" *ngIf="param === 'company'">Sign up Using <img src="../../../assets/images/abshar_logo.png" width="60px"></h5>
                     <span class="small my-2">
                         We have sent you a code on your email +1234567. Please enter that code below
                     </span>
@@ -20,7 +20,7 @@
                     <span class="small my-2 text-muted">
                         If you didn't receive a code! <b>Resend in 00:54</b>
                     </span>
-                    <a routerLink="/auth/setup-login-credentials">
+                    <a [routerLink]="param == 'company' ? ['/auth/setup-login-credentials'] : ['/auth/change-password']">
                         <button class="btn btn-primary my-3" style="width: 100%;">Next</button>
                     </a>
                 </div>

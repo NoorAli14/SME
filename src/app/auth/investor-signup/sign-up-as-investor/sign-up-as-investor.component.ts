@@ -4,13 +4,13 @@ import { Router, RouterModule } from '@angular/router';
 import { NgbModal, NgbModalConfig } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-required-consents',
+  selector: 'app-sign-up-as-investor',
   standalone: true,
   imports: [CommonModule, RouterModule],
-  templateUrl: './required-consents.component.html',
-  styleUrls: ['./required-consents.component.scss']
+  templateUrl: './sign-up-as-investor.component.html',
+  styleUrls: ['./sign-up-as-investor.component.scss']
 })
-export class RequiredConsentsComponent {
+export class SignUpAsInvestorComponent {
 
 	constructor(config: NgbModalConfig, private modalService: NgbModal, private _router: Router) {
 		// customize default values of modals used by this component tree

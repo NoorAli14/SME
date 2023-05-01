@@ -1,0 +1,90 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="col-12">
+                <a [routerLink]="['/auth/choose-signup-option']" class="text-decoration-none small">
+                    < Back
+                </a>
+            </div>
+            <div class="col-12 mt-3">
+                <h3>Sign Up as Investor</h3>
+            </div>
+            <div class="col-12">
+                <span class="small">Please provide your contact details, our representative will get you on boarded</span>
+            </div>
+            <div class="col-12 mt-3">
+                <div class="card form-card">
+                    <form>
+                        <div class="form-group my-2">
+                            <span for="cr_number" class="small" style="line-height: 3;">
+                                Company Name&nbsp;
+                                <img src="../../../../assets/images/info_icon.png" width="13px">
+                            </span>
+                            <input type="text" class="form-control" id="cr_number">
+                        </div>
+                        <div class="form-group my-2">
+                            <span for="id_number" class="small" style="line-height: 3;">
+                                Name
+                            </span>
+                            <input type="text" class="form-control" id="id_number">
+                        </div>
+                        <div class="form-group my-2">
+                            <span for="id_number" class="small" style="line-height: 3;">
+                                Postition&nbsp;
+                                <img src="../../../../assets/images/info_icon.png" width="13px">
+                            </span>
+                            <input type="text" class="form-control" id="id_number">
+                        </div>
+                        <div class="form-group my-2">
+                            <span for="id_number" class="small" style="line-height: 3;">
+                                Company Email
+                            </span>
+                            <input type="email" class="form-control" id="id_number">
+                        </div>
+                        <div class="form-group my-2">
+                            <span for="phone" class="small" style="line-height: 3;">Phone</span>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <img src="../../../../assets/images/saudia_flag.png">
+                                        &nbsp;+966
+                                    </span>
+                                </div>
+                                <input type="number" class="form-control" aria-label="Text input with dropdown button">
+                            </div> 
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <span class="form-check-label small" for="flexCheckChecked">
+                                I accept data privacy and policy and terms and conditions
+                            </span>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-primary my-3" style="width: 100%;" (click)="open(content)">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<ng-template #content let-modal>
+    <div class="card form-card p-0">
+        <div class="text-center p-5">
+            <img src="../../../../assets/images/tick.png" width="75px">
+            <h4 class="mt-2">Thank you for leaving contact</h4>
+            <span class="small">Our relationship manager will contact you to complete Sign up process</span>
+        </div>
+        <div class="px-4 py-5" style="background-color: #E5EDFD;">
+            <h6>Meanwhile, you can get familiar with the finance marketplace</h6>
+            <span class="small">
+                Fund Easy is a marketplace that connect finance-ready SME Businesses with the top banks in the Kingdom of Saudi Arabia to view readily available bank offers and hassle-free financing.
+            </span>
+            <div>
+                <a [routerLink]="['/auth/signup']">
+                    <button type="button" class="btn btn-primary my-3">Learn more</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</ng-template>
