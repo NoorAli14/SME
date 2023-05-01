@@ -14,7 +14,7 @@ export const authRoutes: Routes = [
       //     ),
       // },
       {
-        path: 'signup',
+        path: 'choose-signup-option',
         loadComponent: () =>
           import('./choose_signup/choose_signup.component').then(
             (c) => c.ChooseSignupComponent
@@ -25,13 +25,6 @@ export const authRoutes: Routes = [
         loadComponent: () =>
           import('./company-signup/company-signup.component').then(
             (c) => c.CompanySignupComponent
-          ),
-      },
-      {
-        path: 'investor-signup',
-        loadComponent: () =>
-          import('./investor-signup/investor-signup.component').then(
-            (c) => c.InvestorSignupComponent
           ),
       },
       {
@@ -49,9 +42,9 @@ export const authRoutes: Routes = [
           ),
       },
       {
-        path: 'otp',
+        path: 'otp/:screen',
         loadComponent: () =>
-          import('./company-signup/otp/otp.component').then(
+          import('./common/otp/otp.component').then(
             (c) => c.OtpComponent
           ),
       },
@@ -70,8 +63,36 @@ export const authRoutes: Routes = [
           ),
       },
       {
+        path: 'investor-signup',
+        loadComponent: () =>
+          import('./investor-signup/sign-up-as-investor/sign-up-as-investor.component').then(
+            (c) => c.SignUpAsInvestorComponent
+          ),
+      },
+      {
+        path: 'signup',
+        loadComponent: () =>
+          import('./investor-signup/signup/signup.component').then(
+            (c) => c.SignupComponent
+          ),
+      },
+      {
+        path: 'change-password',
+        loadComponent: () =>
+          import('./investor-signup/change-password/change-password.component').then(
+            (c) => c.ChangePasswordComponent
+          ),
+      },
+      {
+        path: 'add-user',
+        loadComponent: () =>
+          import('./investor-signup/add-user/add-user.component').then(
+            (c) => c.AddUserComponent
+          ),
+      },
+      {
         path: '',
-        redirectTo: 'signup',
+        redirectTo: 'choose-signup-option',
         pathMatch: 'full',
       },
     ],

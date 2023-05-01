@@ -4,13 +4,13 @@ import { Router, RouterModule } from '@angular/router';
 import { NgbModal, NgbModalConfig } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-required-consents',
+  selector: 'app-change-password',
   standalone: true,
   imports: [CommonModule, RouterModule],
-  templateUrl: './required-consents.component.html',
-  styleUrls: ['./required-consents.component.scss']
+  templateUrl: './change-password.component.html',
+  styleUrls: ['./change-password.component.scss']
 })
-export class RequiredConsentsComponent {
+export class ChangePasswordComponent {
 
 	constructor(config: NgbModalConfig, private modalService: NgbModal, private _router: Router) {
 		// customize default values of modals used by this component tree
@@ -21,7 +21,7 @@ export class RequiredConsentsComponent {
 	open(content: any) {
 		this.modalService.open(content, { size: 'lg' });
 	}
-
+	
 	ngOnDestroy(){
 		this.modalService.dismissAll();
 	}

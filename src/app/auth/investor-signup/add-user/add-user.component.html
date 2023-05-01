@@ -1,0 +1,102 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="col-12">
+                <a [routerLink]="['/auth/change-password']" class="text-decoration-none small">
+                    < Back
+                </a>
+            </div>
+            <div class="col-12 mt-3">
+                <h3>Add Users</h3>
+            </div>
+            <div class="col-12">
+                <span class="small">Use roles to smoothly run operations.</span>
+            </div>
+            <div class="col-12 mt-3">
+                <div class="card form-card">
+                    <form>
+                        <div class="form-group my-2">
+                            <span for="id_number" class="small" style="line-height: 3;">
+                                Name
+                            </span>
+                            <input type="text" class="form-control" id="id_number">
+                        </div>
+                        <div class="form-group my-2">
+                            <span for="cr_number" class="small" style="line-height: 3;">
+                                Company Email
+                            </span>
+                            <input type="email" class="form-control" id="cr_number">
+                        </div>
+                        <div class="form-group my-2">
+                            <span for="phone" class="small" style="line-height: 3;">Mobile</span>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <img src="../../../../assets/images/saudia_flag.png">
+                                        &nbsp;+966
+                                    </span>
+                                </div>
+                                <input type="number" class="form-control" aria-label="Text input with dropdown button">
+                            </div> 
+                        </div>
+                        <div class="my-3">
+                            <span class="small">Roles</span>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    <span class="form-check-label small" for="flexCheckChecked">
+                                        Relationship Manager&nbsp;
+                                        <img src="../../../../assets/images/info_icon.png" width="13px">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    <span class="form-check-label small" for="flexCheckChecked">
+                                        Product Manager&nbsp;
+                                        <img src="../../../../assets/images/info_icon.png" width="13px">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-3">
+                            <span class="small">Permissions</span>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                    <span class="form-check-label small" for="gridRadios1">
+                                        Initiator&nbsp;
+                                        <img src="../../../../assets/images/info_icon.png" width="13px">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                    <span class="form-check-label small" for="gridRadios1">
+                                        Approver&nbsp;
+                                        <img src="../../../../assets/images/info_icon.png" width="13px">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-outline-primary my-3" style="width: 50%;">Add Another User</button>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-primary my-3" style="width: 100%;">Submit</button>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-outline-primary border-dashed my-3" style="width: 100%;">Continue as Administrator</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

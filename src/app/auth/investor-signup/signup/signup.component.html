@@ -2,40 +2,40 @@
     <div class="row justify-content-center">
         <div class="col-md-6">
             <div class="col-12">
-                <a [routerLink]="['/auth/otp/company']" class="text-decoration-none small">
+                <a [routerLink]="['/auth/choose-signup-option']" class="text-decoration-none small">
                     < Back
                 </a>
             </div>
             <div class="col-12 mt-3">
-                <h3>Set up Login Credentials</h3>
+                <h3>Sign Up</h3>
             </div>
             <div class="col-12">
-                <span class="small">Please set up login details.</span>
+                <span class="small">Please use credentials that have been shared with you.</span>
             </div>
             <div class="col-12 mt-3">
                 <div class="card form-card">
                     <form>
                         <div class="form-group my-2">
                             <span for="cr_number" class="small" style="line-height: 3;">
-                                Username &nbsp;
+                                Company Name&nbsp;
                                 <img src="../../../../assets/images/info_icon.png" width="13px">
                             </span>
                             <input type="text" class="form-control" id="cr_number">
                         </div>
                         <div class="form-group my-2">
-                            <span for="password" class="small" style="line-height: 3;">
+                            <span for="id_number" class="small" style="line-height: 3;">
                                 Password
                             </span>
-                            <input type="password" class="form-control" id="password">
+                            <input type="password" class="form-control" id="id_number">
                         </div>
-                        <div class="form-group my-2">
-                            <span for="confirm_password" class="small" style="line-height: 3;">
-                                Confirsm Password
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <span class="form-check-label small" for="flexCheckChecked">
+                                I accept data privacy and policy and terms and conditions
                             </span>
-                            <input type="password" class="form-control" id="confirm_password">
                         </div>
                         <div>
-                            <a routerLink="/auth/required-consents">
+                            <a routerLink="/auth/otp/investor">
                                 <button class="btn btn-primary my-3" style="width: 100%;">Next</button>
                             </a>
                         </div>
