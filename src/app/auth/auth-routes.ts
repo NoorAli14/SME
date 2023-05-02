@@ -91,6 +91,34 @@ export const authRoutes: Routes = [
           ),
       },
       {
+        path: 'complete-profile',
+        loadComponent: () =>
+          import('./common/complete-profile/complete-profile.component').then(
+            (c) => c.CompleteProfileComponent
+          ),
+      },
+      {
+        path: 'complete-profile-address',
+        loadComponent: () =>
+          import('./common/correspondence-address/correspondence-address.component').then(
+            (c) => c.CorrespondenceAddressComponent
+          ),
+      },
+      {
+        path: 'complete-profile-address-ownership',
+        loadComponent: () =>
+          import('./common/ownership/ownership.component').then(
+            (c) => c.OwnershipComponent
+          ),
+      },
+      {
+        path: 'complete-profile-address-ownership-financial-information',
+        loadComponent: () =>
+          import('./common/financial-information/financial-information.component').then(
+            (c) => c.FinancialInformationComponent
+          ),
+      },
+      {
         path: '',
         redirectTo: 'choose-signup-option',
         pathMatch: 'full',

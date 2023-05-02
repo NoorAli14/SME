@@ -26,4 +26,13 @@ export class RequiredConsentsComponent {
 		this.modalService.dismissAll();
 	}
 
+	goToDashboard(){
+		this.modalService.dismissAll();
+		this._router.navigate(['/home'])
+	}
+
+	completeProfile(){
+		this.modalService.dismissAll();
+		this._router.navigate(['/auth/complete-profile'])
+	}
 }
