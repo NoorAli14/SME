@@ -1,0 +1,13 @@
+<section class="progress-list px-3 py-5">
+
+    <ol>
+        <li *ngFor="let item of navList; index as i" 
+        [ngClass]="{
+            active: i+1 == itemIndex,
+            completed: i+1 < itemIndex
+          }">
+            {{item}}
+        </li>
+    </ol>
+
+</section>

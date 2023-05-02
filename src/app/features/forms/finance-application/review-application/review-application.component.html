@@ -1,0 +1,143 @@
+<section class="review-application">
+
+    <div class="px-4 pt-3">
+        <a href="/" class="d-flex mb-3 mb-md-0 link-dark text-decoration-none fw-bold fs-18">
+            FUND <span class="text-primary">EASY</span>
+        </a>
+    </div>
+    
+    <div class="container mb-4">
+        <div class="row justify-content-center">
+
+            <div class="col-10 col-md-8">
+
+                <div class="d-flex justify-content-between">
+                    <a routerLink="/form/finance-application-eligibility" class="text-decoration-none d-flex align-items-center"> <img class="me-1" src="./assets/icons/back.svg"> back </a>
+                    <a routerLink="/finance-application" class="text-decoration-none d-flex align-items-center"> Close Application <img class="ms-1" src="./assets/icons/close.svg"> </a>
+                </div>
+
+                <h1 class="fw-semibold mt-4">Finance Application</h1>
+                <div class="fs-12 fw-semibold text-secondary">Get financing in just few clicks</div>
+
+                <div class="card my-3 d-flex flex-row">
+
+                    <div class="flex-fill border-end w-25">
+                        <app-form-progress-list [navList]="navList" itemIndex="3">
+                        </app-form-progress-list>
+                    </div>
+                    <div class="form flex-fill w-75">
+
+                        <form>
+                            <h2 class="mb-3">Review Application</h2>
+                            <div class="d-flex my-3">
+                                <div class="form-group flex-fill w-50">
+                                    <label class="text-secondary">
+                                        Finance Type
+                                    </label>
+                                    <div class="fs-18">POS Financing</div>
+                                </div>
+                                <div class="form-group flex-fill w-50">
+                                    <label class="text-secondary">
+                                        Finance From Bank
+                                    </label>
+                                    <div class="fs-18">Green Bank</div>
+                                </div>                        
+                            </div>
+                            <div class="d-flex my-3">
+                                <div class="form-group flex-fill w-50">
+                                    <label class="text-secondary">
+                                        Finance Amount
+                                    </label>
+                                    <div class="fs-18">SAR 1,500,000</div>
+                                </div>
+                                <div class="form-group flex-fill w-50">
+                                    <label class="text-secondary">
+                                        Finance Tenor
+                                    </label>
+                                    <div class="fs-18">8 Months</div>
+                                </div>                        
+                            </div>
+                            <div class="d-flex my-3">
+                                <div class="form-group flex-fill w-50">
+                                    <label class="text-secondary">
+                                        Bank’s Profit Rate p.a
+                                    </label>
+                                    <div class="fs-18">SAR 52,500</div>
+                                </div>
+                                <div class="form-group flex-fill w-50">
+                                    <label class="text-secondary">
+                                        Bank’s Profit Amount
+                                    </label>
+                                    <div class="fs-18">SAR 52,500</div>
+                                </div>                        
+                            </div>
+                            <div class="form-group my-3">
+                                <label class="text-secondary">
+                                    Total Amount
+                                </label>
+                                <div class="fs-18">SAR 1,552,500</div>
+                            </div>
+                            <div class="d-flex my-3">
+                                <div class="form-group flex-fill w-50">
+                                    <label class="text-secondary">
+                                        Installment Amount
+                                    </label>
+                                    <div class="fs-18">SAR 1,900</div>
+                                </div>
+                                <div class="form-group flex-fill w-50">
+                                    <label class="text-secondary">
+                                        Installment Date
+                                    </label>
+                                    <div class="fs-18">18th day of every month</div>
+                                </div>                        
+                            </div>
+                            <div class="d-flex my-3">
+                                <div class="form-group flex-fill w-50">
+                                    <label class="text-secondary">
+                                        Fees & Charges
+                                    </label>
+                                    <div class="fs-18">1.15%</div>
+                                </div>
+                                <div class="form-group flex-fill w-50">
+                                    <label class="text-secondary">
+                                        Fees & Charges Amount
+                                    </label>
+                                    <div class="fs-18">SAR 1,700.00</div>
+                                </div>                        
+                            </div>
+                            <div class="form-group my-3">
+                                <label class="text-secondary">
+                                    POS Bank Name
+                                </label>
+                                <div class="fs-18">Green Bank</div>
+                            </div>
+                            <div class="form-group my-3">
+                                <label class="text-secondary">
+                                    POS Account Number
+                                </label>
+                                <div class="fs-18">6789 8765 0987 0987</div>
+                            </div>
+
+                            <div class="fs-12 text-secondary">
+                                Note: The above account will be used for installment payment for the requested finance, and will also be used for deducting any associated fees and chargesNote: The above account will be used for installment payment for the requested finance, and will also be used for deducting any associated fees and charges
+                            </div>
+
+                            <div class="my-3">
+                                <button type="button" class="btn btn-primary me-3 px-4" [routerLink]="['/form/finance-application-submitted']" routerLinkActive="router-link-active">Next</button>
+                                <button type="button" class="btn btn-outline-primary px-4" [routerLink]="['/home']">Save as Draft</button>
+                            </div>
+
+                        </form>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    
+
+</section>

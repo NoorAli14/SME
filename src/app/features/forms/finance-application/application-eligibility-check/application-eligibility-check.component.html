@@ -1,0 +1,41 @@
+<section class="new-finance-application">
+
+    <div class="px-4 pt-3">
+        <a href="/" class="d-flex mb-3 mb-md-0 link-dark text-decoration-none fw-bold fs-18">
+            FUND <span class="text-primary">EASY</span>
+        </a>
+    </div>
+    
+    <div class="container mb-4">
+        <div class="row justify-content-center">
+
+            <div class="col-10 col-md-8">
+
+                <div class="d-flex justify-content-between">
+                    <a routerLink="/form/finance-application" class="text-decoration-none d-flex align-items-center"> <img class="me-1" src="./assets/icons/back.svg"> back </a>
+                    <a routerLink="/finance-application" class="text-decoration-none d-flex align-items-center"> Close Application <img class="ms-1" src="./assets/icons/close.svg"> </a>
+                </div>
+
+                <h1 class="fw-semibold mt-4">Finance Application</h1>
+                <div class="fs-12 fw-semibold text-secondary">Get financing in just few clicks</div>
+
+                <div class="card my-3 d-flex flex-row">
+
+                    <div class="flex-fill border-end w-25">
+                        <app-form-progress-list [navList]="navList" itemIndex="2">
+                        </app-form-progress-list>
+                    </div>
+                    <div class="form flex-fill w-75">
+                        <app-finance-application-form [data]="data"></app-finance-application-form>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    
+
+</section>
