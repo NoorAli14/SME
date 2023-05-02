@@ -1,1 +1,138 @@
-<p>market-place works!</p>
+<section class="investor-marketplace mx-3">
+    
+    <h1 class="fw-semibold my-4">Marketplace</h1>
+
+    <div class="d-flex my-4">
+    
+        <div class="p-3 flex-fill form">
+
+            <div class="row fw-semibold mb-3">
+                <span class="col-8 fs-14">Sort By</span>
+                <span class="col-4 fs-12 text-primary">Reset</span>
+            </div>
+
+            <div class="row fw-semibold my-2">
+                <span class="col-8 fs-12 text-secondary">Amount</span>
+            </div>
+
+            <div class="row fw-semibold my-2">
+                <span class="col-8 fs-12 text-secondary">Credit</span>
+            </div>
+
+            <div class="row fw-semibold my-3">
+                <span class="col-12 fs-14">Finaning</span>
+            </div>
+
+            <div class="row fw-semibold mb-3">
+                <span class="col-12 fs-12 text-secondary">Loan Amount ( SAR )</span>
+                <div class="col-12 d-flex">
+                    <input class="form-control w-100-p">
+                    <span class="m-2 fs-12 text-secondary">To</span>
+                    <input class="form-control w-100-p">
+                </div>
+            </div>
+
+            <div class="row fw-semibold my-3">
+                <span class="col-12 fs-14">Duration</span>
+            </div>
+
+            <div class="row fw-semibold my-2">
+                <span class="col-8 fs-12 text-secondary">3 Month</span>
+                <span class="col-4 text-primary text-end">
+                    <input type="checkbox">
+                </span>
+            </div>
+
+            <div class="row fw-semibold my-2">
+                <span class="col-8 fs-12 text-secondary">6 Month</span>
+                <span class="col-4 text-primary text-end">
+                    <input type="checkbox">
+                </span>
+            </div>
+
+            <div class="row fw-semibold my-2">
+                <span class="col-8 fs-12 text-secondary">12 Month</span>
+                <span class="col-4 text-primary text-end">
+                    <input type="checkbox">
+                </span>
+            </div>
+
+            <div class="row fw-semibold mb-3">
+                <span class="col-12 fs-14">Products</span>
+            </div>
+
+            <div class="row fw-semibold my-2">
+                <span class="col-8 fs-12 text-secondary">Invoice Financing</span>
+                <span class="col-4 text-primary text-end">
+                    <input type="checkbox">
+                </span>
+            </div>
+
+            <div class="row fw-semibold my-2">
+                <span class="col-8 fs-12 text-secondary">POS Financing</span>
+                <span class="col-4 text-primary text-end">
+                    <input type="checkbox">
+                </span>
+            </div>
+
+            <div class="row fw-semibold my-2">
+                <span class="col-8 fs-12 text-secondary">Term loan</span>
+                <span class="col-4 text-primary text-end">
+                    <input type="checkbox">
+                </span>
+            </div>
+
+            <div class="row fw-semibold my-2">
+                <span class="col-8 fs-12 text-secondary">Working Capital</span>
+                <span class="col-4 text-primary text-end">
+                    <input type="checkbox">
+                </span>
+            </div>
+
+            <div class="row fw-semibold my-3">
+                <span class="col-12 fs-14">Company</span>
+            </div>
+
+            <div class="row fw-semibold mb-3">
+                <span class="col-12 fs-12 text-secondary">Revenue Amount ( SAR )</span>
+                <div class="col-12 d-flex">
+                    <input class="form-control w-100-p">
+                    <span class="m-2 fs-12 text-secondary">To</span>
+                    <input class="form-control w-100-p">
+                </div>
+            </div>
+
+            <div class="row fw-semibold mb-3">
+                <span class="col-12 fs-12 text-secondary">Company Age ( Years )</span>
+                <div class="col-12 d-flex">
+                    <input class="form-control w-100-p">
+                    <span class="m-2 fs-12 text-secondary">To</span>
+                    <input class="form-control w-100-p">
+                </div>
+            </div>
+
+            <div class="row fw-semibold mb-3">
+                <span class="col-12 fs-12 text-secondary">No of Employees</span>
+                <div class="col-12 d-flex">
+                    <input class="form-control w-100-p">
+                    <span class="m-2 fs-12 text-secondary">To</span>
+                    <input class="form-control w-100-p">
+                </div>
+            </div>
+
+            <button class="btn btn-outline-primary w-100 fw-semibold">Apply</button>
+    
+        </div>
+
+        <div class="flex-fill ms-3">
+            
+            <app-finance-brief [heading]="'Gulf BROG General Contracting Co.'" [imageUrl]="'./assets/company/gulf.svg'" [type]="'investor'"></app-finance-brief>
+            <app-finance-brief [heading]="'Careem'" [imageUrl]="'./assets/company/careem.svg'" [type]="'investor'"></app-finance-brief>
+            <app-finance-brief [heading]="'Tesla'" [imageUrl]="'./assets/company/tesla.svg'" [type]="'investor'"></app-finance-brief>
+            <app-finance-brief [heading]="'Amazon'" [imageUrl]="'./assets/company/amazon.svg'" [type]="'investor'"></app-finance-brief>
+
+        </div>
+
+    </div>
+
+</section>

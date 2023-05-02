@@ -1,1 +1,89 @@
-<p>finance-calculator works!</p>
+<section class="investor-calculator mx-3">
+    
+    <h1 class="fw-semibold my-4">Finance Calculator</h1>
+
+        <div class="border rounded p-3 bg-white my-4 w-75">
+
+            <h3 class="pb-3">Calculator</h3>
+
+            <div class="fs-12 fw-semibold">
+
+                <p class="text-secondary">Products</p>
+                
+                <input type="radio" class="btn-check" name="products" id="invoice-financing" autocomplete="off">
+                <label class="btn btn-outline fs-12 me-2 fw-semibold" for="invoice-financing">Invoice Financing</label>
+
+                <input type="radio" class="btn-check" name="products" id="pos-financing" autocomplete="off" checked>
+                <label class="btn btn-outline fs-12 me-2 fw-semibold" for="pos-financing">POS Financing</label>
+                
+                <input type="radio" class="btn-check" name="products" id="term-loan" autocomplete="off">
+                <label class="btn btn-outline fs-12 me-2 fw-semibold" for="term-loan">Term Loan</label>
+
+                <input type="radio" class="btn-check" name="products" id="working-capital" autocomplete="off">
+                <label class="btn btn-outline fs-12 me-2 fw-semibold" for="working-capital">Working Capital</label>
+
+            </div>
+
+            <div class="d-flex mt-4">
+
+                <div class="fs-12 text-secondary flex-fill">
+
+                    <label class="form-label fw-semibold mt-3">POS Revenue</label>
+                    <input class="form-control" type="text" placeholder="SAR 1,000,000.00">
+
+                    <label class="form-label fw-semibold mt-3">Finance Amount</label>
+                    <input class="form-control" type="text" placeholder="SAR 500,000">
+
+                    <label class="form-label fw-semibold mt-3">Required Finance Tenor?</label>
+                    <input class="form-range" type="range">
+                    
+                    <div class="d-flex">
+                        
+                        <div>
+                            <label class="form-label fw-semibold mt-3">Rate p.a.</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control text-end" placeholder="5" aria-describedby="basic-addon2">
+                                <span class="input-group-text rounded-end" id="basic-addon2">%</span>
+                              </div>
+                            <label class="form-label fw-semibold mt-3">Lowest Rate p.a. 5%</label>
+                        </div>
+                        <div class="ms-3">
+                            <label class="form-label fw-semibold mt-3">Rate p.a.</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control text-end" placeholder="1.25" aria-describedby="basic-addon2">
+                                <span class="input-group-text rounded-end" id="basic-addon2">%</span>
+                            </div>
+                            <label class="form-label fw-semibold mt-3">Lowest Rate p.a. 5%</label>
+                        </div>
+
+                    </div>
+
+                    <label class="form-label fw-semibold mt-3">Repayment</label>
+                    <select class="form-select">
+                        <option selected>Monthly Installments</option>
+                    </select>
+
+                </div>
+
+                <!-- <div class="ms-3 flex-fill"> -->
+
+                    <div class="rounded bg-light-blue p-5 fw-semibold ms-3 flex-fill">
+                        <p>
+                            <span class="fs-12 text-secondary">You can borrow</span>
+                            <span class="fs-18 d-block">SAR 45,000.00</span>
+                        </p>
+                        <p>
+                            <span class="fs-12 text-secondary">With a monthly payment of</span>
+                            <span class="fs-18 d-block">SAR 1,140.00</span>
+                            <span class="fs-12 text-secondary">in 2 years</span>
+                        </p>
+                        
+                    </div>
+
+                <!-- </div> -->
+
+            </div>
+    
+        </div>
+
+</section>

@@ -1,1 +1,82 @@
-<p>home works!</p>
+<section class="investor-home mx-3 mb-3">
+    
+    <h1 class="fw-semibold my-4">Home</h1>
+    
+    <ul ngbNav #nav="ngbNav" class="nav-tabs nav-pills border-0">
+      <li ngbNavItem>
+        <button ngbNavLink><img src="./assets/icons/navlink-home.svg" alt="">Offer Letters (3)</button>
+        <ng-template ngbNavContent>
+          <h4 class="pb-3">New Applications</h4>
+        </ng-template>
+      </li>
+      <li ngbNavItem>
+        <button ngbNavLink>
+          <img src="./assets/icons/navlink-home.svg" alt="" class="me-2">Pre-Approvals (10)
+        </button>
+        <ng-template ngbNavContent>
+          <h4 class="pb-3">Pre-Approvals</h4>
+        </ng-template>
+      </li>
+      <li ngbNavItem>
+        <button ngbNavLink>
+          <img src="./assets/icons/navlink-home.svg" alt="" class="me-2">Pending Approvals (3)
+        </button>
+        <ng-template ngbNavContent>
+          <h4 class="pb-3">Pending Approvals</h4>
+        </ng-template>
+      </li>
+      <li ngbNavItem>
+        <button ngbNavLink>
+          <img src="./assets/icons/navlink-home.svg" alt="" class="me-2">Offers Expiring (12)
+        </button>
+        <ng-template ngbNavContent>
+          <h4 class="pb-3">Offers Expiring</h4>
+        </ng-template>
+      </li>
+    </ul>
+
+    <div class="d-flex my-4">
+
+      <div class="flex-fill">
+
+        <div class="add-product rounded p-4 mb-3">
+
+          <h4 class="pb-3">Add your Products</h4>
+
+          <div class="text-secondary fs-12 fw-semibold">
+            Add your products so companies can directly apply for these
+            <ul>
+              <li>Invoice Financing</li>
+              <li>POS Financing</li>
+              <li>Term loan</li>
+              <li>Working Capital</li>
+            </ul>
+          </div>
+
+          <button class="btn btn-primary px-5">Add Product</button>
+
+        </div>
+
+        <div class="border rounded p-4 bg-white">
+
+          <div [ngbNavOutlet]="nav"></div> 
+
+          <div class="text-center">
+            <h4>No application received</h4>
+            <p class="text-secondary fs-12 fw-semibold">You can wait for the applications to arrive or actively look up for companies that needs financing</p>
+            <button type="button" routerLink="/investor/marketplace" class="btn btn-outline-primary px-5 mt-3">Go to Marketplace</button>
+          </div>
+          
+        </div>
+
+      </div>
+
+      <div class="flex-fill ms-3 option-bar">
+
+          <app-finance-option></app-finance-option>
+          
+      </div>
+
+    </div>
+
+</section>

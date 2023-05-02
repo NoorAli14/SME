@@ -12,5 +12,6 @@ export class FinanceBriefComponent {
 
   @Input() heading: string = '';
   @Input() imageUrl: string = '';
+  @Input() type: string = 'company';
 
 }

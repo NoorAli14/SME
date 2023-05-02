@@ -3,4 +3,8 @@
         background-color: #F7FCFF;
         border: 1px solid #99B6F8;
     }
+    input:checked + label{
+        border-color:#1A47E5;
+        color: #1A47E5;
+    }
 }

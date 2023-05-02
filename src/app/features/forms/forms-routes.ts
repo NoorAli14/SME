@@ -25,7 +25,7 @@ export const formRoutes: Routes = [
   {
     path: 'finance-application-submitted',
     loadComponent: () =>
-      import('.//finance-application/finance-application-submitted/finance-application-submitted.component').then(
+      import('./finance-application/finance-application-submitted/finance-application-submitted.component').then(
         (c) => c.FinanceApplicationSubmittedComponent
       ),
   },
