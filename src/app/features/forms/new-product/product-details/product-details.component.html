@@ -1,0 +1,110 @@
+<section class="review-application">
+
+    <div class="px-4 pt-3">
+        <a href="/" class="d-flex mb-3 mb-md-0 link-dark text-decoration-none fw-bold fs-18">
+            FUND <span class="text-primary">EASY</span>
+        </a>
+    </div>
+    
+    <div class="container mb-4">
+        <div class="row justify-content-center">
+
+            <div class="col-10 col-md-8">
+
+                <div class="d-flex justify-content-between">
+                    <a routerLink="/form/select-product" class="text-decoration-none d-flex align-items-center"> <img class="me-1" src="./assets/icons/back.svg"> back </a>
+                </div>
+
+                <h1 class="fw-semibold mt-4">POS Financing</h1>
+
+                <div class="card my-3 d-flex flex-row">
+
+                    <div class="flex-fill border-end w-25">
+                        <app-form-progress-list [navList]="navList" itemIndex="2">
+                        </app-form-progress-list>
+                    </div>
+                    <div class="form flex-fill w-75">
+                        <form>
+                            <h3 class="mb-3">Product Details</h3>
+                            <div class="form-group my-2">
+                                <span for="id_number" class="small" style="line-height: 3;">
+                                    Product Name
+                                </span>
+                                <input type="text" class="form-control" id="id_number">
+                            </div>
+                            <div class="form-group my-2">
+                                <label class="text-secondary">
+                                    Finance Amount
+                                </label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-text rounded-end" id="basic-addon2">SAR</span>
+                                </div>
+                            </div>
+                            <div class="form-group my-3">
+                                <label class="text-secondary">
+                                    Finance Tenor
+                                </label>
+                                <select class="form-select">
+                                    <option>12 Months</option>
+                                    <option>24 Months</option>
+                                    <option selected>48 Months</option>
+                                </select>
+                            </div>
+                            <div class="form-group my-2">
+                                <label class="text-secondary">
+                                    Min Rate p. a.
+                                </label>
+                                <div class="input-group">
+                                    <input type="text" value="3.25%" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group my-2">
+                                <label class="text-secondary">
+                                    Min Fee and Charges
+                                </label>
+                                <div class="input-group">
+                                    <input type="text" value="1.25%" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group my-2">
+                                <label class="text-secondary">
+                                    Introduction
+                                </label>
+                                <div class="input-group">
+                                    <textarea type="text" value="1.25%" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group my-2">
+                                <label class="text-secondary">
+                                    Top Features
+                                </label>
+                                <div class="input-group">
+                                    <textarea type="text" value="1.25%" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group my-2">
+                                <label class="text-secondary">
+                                    Benefits
+                                </label>
+                                <div class="input-group">
+                                    <textarea type="text" value="1.25%" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-primary me-3 px-4" [routerLink]="['/form/eligibility-details']" routerLinkActive="router-link-active">Next</button>
+                                <button type="button" class="btn btn-outline-primary px-4" [routerLink]="['/investor/home']">Save as Draft</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    
+
+</section>

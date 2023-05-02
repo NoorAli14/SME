@@ -1,1 +1,44 @@
-<p>product-management works!</p>
+<section class="company-info mx-3 mb-3">
+    
+    <h1 class="fw-semibold my-4">Product Management</h1>
+
+    <div class="border rounded p-4 bg-white w-100">
+        <div class="row">
+            <div class="col-md-6">
+                <ul ngbNav #nav="ngbNav" class="nav-tabs nav-pills border-0 bg-light p-2 fs-14">
+                    <li ngbNavItem>
+                        <button ngbNavLink>
+                            All
+                        </button>
+                        <ng-template ngbNavContent>
+                            <app-all-products></app-all-products>
+                        </ng-template>
+                    </li>
+                    <li ngbNavItem>
+                        <button ngbNavLink>
+                            Published
+                        </button>
+                        <ng-template ngbNavContent>
+                            <app-published-products></app-published-products>
+                        </ng-template>
+                    </li>
+                    <li ngbNavItem>
+                        <button ngbNavLink>
+                            Draft
+                        </button>
+                        <ng-template ngbNavContent>
+                            <app-draft-products></app-draft-products>
+                        </ng-template>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6 text-end">
+                <button type="button" class="btn btn-primary" [routerLink]="['/form/select-product']">Add New</button>
+            </div>
+        </div>
+
+          <div class="py-4" [ngbNavOutlet]="nav"></div>
+
+    </div>
+
+</section>
