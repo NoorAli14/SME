@@ -1,0 +1,12 @@
+input[type='file'] {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.btn-close{
+    position: absolute;
+    top: -25px;
+    right: 20px;
+}

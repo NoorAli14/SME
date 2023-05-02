@@ -37,6 +37,13 @@ export const investorRoutes: Routes = [
       ),
   },
   {
+    path: 'contact-center',
+    loadComponent: () =>
+      import('./contact-center/contact-center.component').then(
+        (c) => c.ContactCenterComponent
+      ),
+  },
+  {
     path: '**',
     redirectTo: 'home',
     pathMatch: 'full',

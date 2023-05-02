@@ -1,0 +1,52 @@
+<section class="company-info mx-3 mb-3">
+    
+    <h3 class="fw-semibold my-4">Communication Center</h3>
+
+    <div class="border rounded p-4 bg-white w-100">
+        <div class="row">
+            <div class="col-md-6">
+                <ul ngbNav #nav="ngbNav" class="nav-tabs nav-pills border-0 p-2 fs-14">
+                    <li ngbNavItem>
+                        <button ngbNavLink>
+                            All
+                        </button>
+                        <ng-template ngbNavContent>
+                            <app-all-center></app-all-center>
+                        </ng-template>
+                    </li>
+                    <li ngbNavItem>
+                        <button ngbNavLink>
+                            Client
+                        </button>
+                        <ng-template ngbNavContent>
+                            <app-all-center></app-all-center>
+                        </ng-template>
+                    </li>
+                    <li ngbNavItem>
+                        <button ngbNavLink>
+                            Internal
+                        </button>
+                        <ng-template ngbNavContent>
+                            <app-all-center></app-all-center>
+                        </ng-template>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6 text-end">
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="fa fa-search p-1"></i>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control border-left-0" aria-label="Text input with dropdown button">
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="py-4" [ngbNavOutlet]="nav"></div>
+
+    </div>
+
+</section>
