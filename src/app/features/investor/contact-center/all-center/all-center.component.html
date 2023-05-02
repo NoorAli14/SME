@@ -1,0 +1,169 @@
+<div class="row">
+    <div class="col-md-4 border-end">
+        <div class="d-flex flex-row align-items-center">
+            <img src="./assets/icons/online.svg" class="me-2">
+            <div class="d-flex flex-column">
+                <div>
+                    <span class="small text-secondary">Gulf BROG General Contracting Co.</span>
+                </div>
+                <div>
+                    POS-01022023-001
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-row align-items-center my-2">
+            <img src="./assets/icons/online.svg" class="me-2 invisible">
+            <div class="d-flex flex-column">
+                <div>
+                    <span class="small text-secondary">Uber</span>
+                </div>
+                <div>
+                    POS-01022023-002
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-row align-items-center my-2">
+            <img src="./assets/icons/online.svg" class="me-2">
+            <div class="d-flex flex-column">
+                <div>
+                    <span class="small text-secondary">Starbucks</span>
+                </div>
+                <div>
+                    POS-01022023-001
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8 p-0">
+        <div class="bg-light px-3 py-2 border-bottom m-0 d-flex justify-content-between align-items-center">
+            <div>
+                <span class="small text-secondary">All communications regarding application</span>
+                <h6 class="">POS-01022023-001 <span class="small text-secondary">for</span> Gulf BROG General Contracting Co.</h6>
+            </div>
+            <div>
+                <div ngbDropdown class="d-inline-block" placement="start-top">
+                    <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+                        Contact
+                    </button>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="p-2" style="width: 200px;">
+                        <span class="small text-secondary">Client Communication</span>
+                        <div class="dropdown-divider"></div>
+                        <button ngbDropdownItem class="small px-0" (click)="open(content)">New Message</button>
+                        <button ngbDropdownItem class="small px-0">Start Chat</button>
+                        <button ngbDropdownItem class="small px-0">Start Video Call</button>
+                        <span class="small text-secondary">Internal Communication</span>
+                        <div class="dropdown-divider"></div>
+                        <button ngbDropdownItem class="small px-0">New Message</button>
+                        <button ngbDropdownItem class="small px-0">Start Chat</button>
+                        <button ngbDropdownItem class="small px-0">Start Video Call</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="px-3 py-2 border-bottom m-0 d-flex justify-content-between align-items-center">
+            <div class="d-flex flex-row">
+                <img src="./assets/icons/online.svg" class="me-2">
+                <div class="d-flex flex-column">
+                    <span class="small text-secondary">Client Request Document | 3 messages |  </span>
+                    <h6 class="m-0">Sales Documents</h6>
+                    <span class="small">Please find our clarifications attached</span>
+                </div>
+            </div>
+            <div>
+                <span class="small">Yesterday, 2:12 PM</span>
+            </div>
+        </div>
+        <div class="px-3 py-2 border-bottom m-0 d-flex justify-content-between align-items-center">
+            <div class="d-flex flex-row">
+                <img src="./assets/icons/online.svg" class="me-2 invisible">
+                <div class="d-flex flex-column">
+                    <span class="small text-secondary">Client Request Document | 3 messages |  </span>
+                    <h6 class="m-0">Income details</h6>
+                    <span class="small">Please find our clarifications attached</span>
+                </div>
+            </div>
+            <div>
+                <span class="small">Wednesday, March 1, 2023 3:49 PM</span>
+            </div>
+        </div>
+    </div>
+</div>
+<ng-template #content let-modal>
+    <div class="px-4 py-3">
+        <div class="border-bottom m-0 d-flex justify-content-between align-items-center">
+            <div>
+                <span class="small text-secondary">POS-01022023-001</span>
+                <h6>New Message to Gulf BROG General Contracting Co.</h6>
+            </div>
+            <div>
+                <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+            </div>
+        </div>
+        <form>
+            <div class="my-2 border-bottom">
+                <div class="form-group my-3">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" (change)="onRadioChange($event)" value="custom">
+                        <label class="form-check-label" for="inlineRadio1">Custom Message</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" (change)="onRadioChange($event)" value="template">
+                        <label class="form-check-label" for="inlineRadio2">Template</label>
+                    </div>
+                </div>
+                <div *ngIf="radioSelected == 'custom'">
+                    <div class="form-group my-3">
+                        <span for="cr_number" class="small" style="line-height: 3;">
+                            Message Title
+                        </span>
+                        <input type="text" class="form-control" id="title">
+                    </div>
+                    <div class="form-group my-3">
+                        <div class="input-group">
+                            <textarea type="text" value="1.25%" class="form-control" placeholder="Type your message here..."></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group my-3">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">Request Document</label>
+                        </div>
+                    </div>
+                </div>
+                <div *ngIf="radioSelected == 'template'">
+                    <div class="form-group my-3">
+                        <span for="doc_name" class="small" style="line-height: 3;">
+                            Document Name
+                        </span>
+                        <input type="text" class="form-control" id="doc_name">
+                    </div>
+                    <div class="form-group my-3">
+                        <label class="text-secondary">
+                            Template
+                        </label>
+                        <select class="form-select">
+                            <option>Request a new document</option>
+                            <option>Request a revised document</option>
+                            <option selected>Request visit the branch</option>
+                            <option>Request to visit the RM</option>
+                            <option>Send reminder</option>
+                            <option>Update on application status</option>
+                            <option>Custom template 1</option>
+                            <option>Custom template</option>
+                        </select>
+                    </div>
+                    <div class="my-3">
+                        <label>
+                            <input id="Image" type="file" class="form-control-image" name="image_reference">
+                            <span class="btn btn-outline-primary">
+                                <i class="fa fa-plus"></i>
+                                Add Document
+                            </span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary px-4"> Send</button>
+        </form>
+    </div>
+</ng-template>
