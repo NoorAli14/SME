@@ -12,5 +12,4 @@ import { HeaderComponent } from './common/header/header.component';
   styleUrls: ['./features.component.scss']
 })
 export class FeaturesComponent {
-
 }

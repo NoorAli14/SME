@@ -49,6 +49,11 @@ export const featuresRoutes: Routes = [
           ),
       },
       {
+        path: 'investor',
+        loadChildren: () =>
+          import('./investor/investor-routes').then((m) => m.investorRoutes),
+      },
+      {
         path: '',
         redirectTo: 'home',
         pathMatch: 'full',

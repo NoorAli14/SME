@@ -6,7 +6,15 @@
         </a>
     
         <ul class="nav nav-pills flex-column mb-auto mt-5 fw-semibold">
-          <li class="nav-item">
+
+          <li *ngFor="let item of navList; index as i">
+            <a [routerLink]="item.url" class="nav-link link-secondary" routerLinkActive="active">
+                <img [src]="item.iconUrl" class="me-1" width="16" height="16"/>
+                {{item.name}}
+            </a>
+          </li>
+          
+          <!-- <li class="nav-item">
             <a routerLink="home" class="nav-link link-secondary active" aria-current="page">
                 <img src="./assets/icons/sidebar/home.svg" class="me-1" width="16" height="16"/>
                 Home
@@ -35,7 +43,7 @@
                 <img src="./assets/icons/sidebar/finance-calculator.svg" class="me-1" width="16" height="16"/>
                 Finance Calculators
             </a>
-          </li>
+          </li> -->
         </ul>
     
     </div>
