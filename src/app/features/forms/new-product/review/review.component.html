@@ -1,0 +1,130 @@
+<section class="review-application">
+
+    <div class="px-4 pt-3">
+        <a href="/" class="d-flex mb-3 mb-md-0 link-dark text-decoration-none fw-bold fs-18">
+            FUND <span class="text-primary">EASY</span>
+        </a>
+    </div>
+    
+    <div class="container mb-4">
+        <div class="row justify-content-center">
+
+            <div class="col-10 col-md-8">
+
+                <div class="d-flex justify-content-between">
+                    <a routerLink="/form/eligibility-details" class="text-decoration-none d-flex align-items-center"> <img class="me-1" src="./assets/icons/back.svg"> back </a>
+                </div>
+
+                <h1 class="fw-semibold mt-4">POS Financing</h1>
+
+                <div class="card my-3 d-flex flex-row">
+
+                    <div class="flex-fill border-end w-25">
+                        <app-form-progress-list [navList]="navList" itemIndex="4">
+                        </app-form-progress-list>
+                    </div>
+                    <div class="form flex-fill w-75">
+                        <form>
+                            <h3 class="mb-3">Review</h3>
+                            <div class="form-group my-3">
+                                <span class="small text-secondary">
+                                    Name
+                                </span>
+                                <h5>POS Financing</h5>
+                            </div>
+                            <div class="form-group my-3">
+                                <span class="small text-secondary">
+                                    Maximum Finance
+                                </span>
+                                <h5>SAR 1,500,000</h5>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group my-3">
+                                        <span class="small text-secondary">
+                                            Monthly Payment
+                                        </span>
+                                        <h5>SAR 12,950</h5>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group my-3">
+                                        <span class="small text-secondary">
+                                            Maximum Term
+                                        </span>
+                                        <h5>4 Years</h5>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group my-3">
+                                        <span class="small text-secondary">
+                                            Rate p.a
+                                        </span>
+                                        <h5>min 3.25%</h5>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group my-3">
+                                        <span class="small text-secondary">
+                                            Fees & Charges
+                                        </span>
+                                        <h5>min 1.25%</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group my-3">
+                                <h6>Introduction</h6>
+                                <span class="small">
+                                    GREEN offers finance to all in-store retail and online businesses against Point-of-Sale (POS) Machines or Payment Gateway proceeds. You can use this finance for expanding your business, opening another outlet, financing your inventory, fixed assets, debtors or any other operational expense that you may have in mind. You can repay this loan through easy monthly installments from proceeds of sales collected through your POS machine.
+                                </span>
+                            </div>
+                            <div class="form-group my-3 p-3 bg-blue">
+                                <h6>Top ​Features</h6>
+                                <ul>
+                                    <li class="small">Easy and hassle-free documentation​</li>
+                                    <li class="small">Low profit rates​</li>
+                                    <li class="small">Low processing fees and charges​</li>
+                                    <li class="small">Zero partial settlement or early settlement fees and charges​</li>
+                                    <li class="small">Quick turn-around-time​</li>
+                                    <li class="small">Dedicated relationship manager​</li>
+                                    <li class="small">No equity requirement​</li>
+                                    <li class="small">No collateral requirement</li>
+                                </ul>
+                            </div>
+                            <div class="form-group my-3 p-3 bg-blue">
+                                <h6>Benefits</h6>
+                                <ul>
+                                    <li class="small">Higher finance amount eligibility ​</li>
+                                    <li class="small">Flexible repayment options​</li>
+                                    <li class="small">POS receivable of any POS service provider​</li>
+                                    <li class="small">Islamic financing​</li>
+                                    <li class="small">Top-up facility</li>
+                                </ul>
+                            </div>
+                            <div class="form-group my-3 p-3 bg-blue">
+                                <h6>Eligibility Criteria</h6>
+                                <ul>
+                                    <li class="small">Open to all registered business entities ​</li>
+                                    <li class="small">Point-of-Sales Machines statement of 6 months​</li>
+                                    <li class="small">Business operating for at least 24 months​</li>
+                                    <li class="small">Minimum of 6 months balance maintained in bank accounts should be SAR 30,000​</li>
+                                    
+                                </ul>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-primary me-3 px-4" [routerLink]="['/form/published']" routerLinkActive="router-link-active">Publish</button>
+                                <button type="button" class="btn btn-outline-primary px-4" [routerLink]="['/investor/home']">Save as Draft</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    
+
+</section>

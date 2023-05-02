@@ -20,10 +20,10 @@ export class SideBarComponent implements OnInit{
     if(this._router.url.includes('investor')){
       this.navList = [
         {name: 'Home', iconUrl: './assets/icons/sidebar/home.svg', url: '/investor/home'},
-        {name: 'Marketplace', iconUrl: './assets/icons/sidebar/company-info.svg', url: '/investor/marketplace'},
-        {name: 'Application Manager', iconUrl: './assets/icons/sidebar/company-info.svg', url: '/investor/application-manager'},
-        {name: 'Product Management', iconUrl: './assets/icons/sidebar/company-info.svg', url: '/investor/product-management'},
-        {name: 'Finance Calculators', iconUrl: './assets/icons/sidebar/company-info.svg', url: '/investor/finance-calculator'}
+        {name: 'Marketplace', iconUrl: './assets/icons/sidebar/investor/marketplace.svg', url: '/investor/marketplace'},
+        {name: 'Application Manager', iconUrl: './assets/icons/sidebar/investor/application_manager.svg', url: '/investor/application-manager'},
+        {name: 'Product Management', iconUrl: './assets/icons/sidebar/finance-calculator.svg', url: '/investor/product-management'},
+        {name: 'Finance Calculators', iconUrl: './assets/icons/sidebar/finance-calculator.svg', url: '/investor/finance-calculator'}
       ]
     }else{
       this.navList = [

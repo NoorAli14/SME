@@ -1,0 +1,28 @@
+
+<section class="finance-application-form">
+
+    <form>
+        <h3 class="mb-3">{{data?.heading}}</h3>
+        <div class="form-group">
+            <span class="text-secondary small">
+                Finance Type
+            </span>
+        </div>
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <button class="btn btn-sm btn-outline-secondary fw-semibold me-3 mt-2">Invoice Financing</button>
+                <button class="btn btn-sm btn-outline-primary fw-semibold me-3 mt-2">POS Financing</button>
+                <button class="btn btn-sm btn-outline-secondary fw-semibold me-3 mt-2">Team Loan</button>
+                <button class="btn btn-sm btn-outline-secondary fw-semibold me-3 mt-2">Working Capital</button>
+            </div>
+        </div>
+        <div class="fs-18 my-2">POS Financing</div>
+        <span class="text-secondary small">
+            POS financing allows business owner of small and medium enterprises that have been in business for a year or more to obtain immediate financing solutions to help them develop and expand their businesses, according to the cash flow generated through the enterprise's POS.
+        </span>
+        <div>
+            <button type="button" class="btn btn-primary my-3 w-100" [routerLink]="[data?.next]" routerLinkActive="router-link-active">Next</button>
+        </div>
+    </form>
+
+</section>
