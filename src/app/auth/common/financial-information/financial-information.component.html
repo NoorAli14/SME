@@ -3,12 +3,12 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12">
-            <a class="text-decoration-none small">
+            <a routerLink="/auth/complete-profile-address-ownership" class="text-decoration-none small">
                 < Back </a>
                     <h2 class="py-4">Company Profile</h2>
             <div class="row border">
                 <div class="col-3 border-end">
-                    <app-form-progress-list [navList]="navList" itemIndex="2">
+                    <app-form-progress-list [navList]="navList" itemIndex="4">
                     </app-form-progress-list>
                 </div>
 
@@ -41,7 +41,7 @@
                                 </tr>
 
                                 <tr>
-                                    <td>POS Statement(s)</td>
+                                    <td>POS Staten</td>
                                     <td class="text-center text-primary">Upload</td>
                                     
                                 </tr>
@@ -51,7 +51,7 @@
                     </div>
 
                     <div>
-                        <button class="btn btn-primary my-3" style="width: 20%;">Submit</button>
+                        <button type="button" class="btn btn-primary my-3" style="width: 20%;">Next</button>
                     </div>
 
                 </div>
