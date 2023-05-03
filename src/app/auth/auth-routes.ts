@@ -77,7 +77,7 @@ export const authRoutes: Routes = [
           ),
       },
       {
-        path: 'change-password',
+        path: 'change-password/:screen',
         loadComponent: () =>
           import('./investor-signup/change-password/change-password.component').then(
             (c) => c.ChangePasswordComponent
