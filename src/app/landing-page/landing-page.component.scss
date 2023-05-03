@@ -1,6 +1,44 @@
 .landing-page{
-    background-color: #F8F9FF;
-    .head{
-        padding: 24px 72px;
+    background-color: #E5EDFD;
+    font-weight: 600;
+    img{
+        width: 100%;
+    }
+    .content-padding{
+        padding: 24px 144px;
+    }
+    .bg-light-blue{
+        background-color: rgba(191, 209, 251, 0.6);
+    }
+    .text-heading{
+        font-size: 60px;
+        line-height: 64px;
+    }
+    .text-sub-heading{
+        font-size: 34px;
+        line-height: 40px;
+    }
+    .text-content{
+        font-size: 22px;
+    }
+    .h-600-p{
+        height: 600px;
+    }
+    .absolute-dots{
+        left: -15%;
+        top: 35%;
+        z-index: -1;
+    }
+    .bg-dark-blue{
+        background-color: #001D5F;
+    }
+    .text-light-blue{
+        color: #99B6F8;
+    }
+    .fs-28{
+        font-size: 28px;
+    }
+    .fs-22{
+        font-size: 22px;
     }
 }
