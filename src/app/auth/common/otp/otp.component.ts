@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute, RouterModule } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { NgOtpInputModule } from  'ng-otp-input';
 import { tap } from 'rxjs';
 
@@ -16,6 +16,7 @@ export class OtpComponent implements OnInit{
 
   constructor(
     private readonly _activatedRoute: ActivatedRoute,
+    private readonly _router: Router
   ){}
 
   ngOnInit(): void {
@@ -31,4 +32,12 @@ export class OtpComponent implements OnInit{
   onOtpChange(event:any){
     console.log(event)
   }
+
+  navigateNext(){
+    let url = '/auth/change-password';
+    if(this.param == 'company') url = '/auth/change-password'
+    else if(this.param == 'finance') url = '/investor/application-review/accepted' 
+    this._router.navigate([url])
+  }
+
 }

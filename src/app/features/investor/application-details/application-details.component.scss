@@ -1,0 +1,21 @@
+.application-details{
+    .nav-pills{
+        .nav-link{
+            border: 1px solid rgba(179, 179, 182, 0.49);
+            color: #000000;
+            padding: 6px 16px;
+            margin-right: 16px;
+            border: unset;
+            font-weight: 500;
+            &.active{
+                background-color: #fff;
+                color: #1A47E5;
+                box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+            }
+        }
+    }
+    .offer-accepted{        
+        background-color: #E5EDFD;
+        border: 1px solid #EAEAEA;
+    }
+}

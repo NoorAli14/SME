@@ -44,6 +44,11 @@ export const investorRoutes: Routes = [
       ),
   },
   {
+    path: 'application-review',
+    loadChildren: () =>
+      import('./application-details/application-details-routes').then((m) => m.applicationDetailsRoutes),
+  },
+  {
     path: '**',
     redirectTo: 'home',
     pathMatch: 'full',

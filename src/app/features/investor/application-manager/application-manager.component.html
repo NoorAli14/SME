@@ -1,6 +1,6 @@
 <section class="application-manager mx-3 mb-3">
     
-    <h1 class="fw-semibold my-4">Application Manager</h1>
+    <h1 class="fw-semibold mb-4">Application Manager</h1>
     
     <ul ngbNav #nav="ngbNav" class="nav-tabs nav-pills border-0">
         <li ngbNavItem>
@@ -61,9 +61,12 @@
                 <table class="table table-bordered">
                     <thead>
                         <tr>
-                            <th>Date Names</th>
+                            <th>Date</th>
                             <th>ID Number</th>
-                            <th>Bank Name(s)</th>
+                            <th>SME Name(s)</th>
+                            <th>Product</th>
+                            <th>Finance Amount</th>
+                            <th>RM</th>
                             <th>Status</th>
                             <th>Remarks</th>
                             <th class="text-center">Actions</th>
@@ -74,11 +77,14 @@
                         <tr>
                             <td>31-Jan-2023​ Ali</td>
                             <td>FE-PF-31012023-001</td>
-                            <td>Green Bank</td>
+                            <td>Gulf BROG Co.</td>
+                            <td>POS Financing</td>
+                            <td class="text-end">1,500,000</td>
+                            <td>-</td>
                             <td>In-process</td>
                             <td>Awaiting finance processing</td>
                             <td class="text-center">
-                                <img class="mx-2" src="./assets/icons/view.svg" alt="">
+                                <img class="mx-2 pointer" routerLink="/investor/application-review" src="./assets/icons/view.svg" alt="">
                                 <img class="mx-2" src="./assets/icons/edit.svg" alt="">
                                 <img class="mx-2" src="./assets/icons/delete.svg" alt="">
                             </td>
@@ -87,11 +93,14 @@
                         <tr>
                             <td>31-Jan-2023​ Ali</td>
                             <td>FE-PF-31012023-002</td>
-                            <td>-</td>
+                            <td>Tesla</td>
+                            <td>POS Financing</td>
+                            <td class="text-end">50,000</td>
+                            <td>Ahmed Aziz</td>
                             <td>In-process</td>
-                            <td>Awaiting offers from banks</td>
+                            <td>Pending</td>
                             <td class="text-center">
-                                <img class="mx-2" src="./assets/icons/view.svg" alt="">
+                                <img class="mx-2 pointer" routerLink="/investor/application-review" src="./assets/icons/view.svg" alt="">
                                 <img class="mx-2" src="./assets/icons/edit.svg" alt="">
                                 <img class="mx-2" src="./assets/icons/delete.svg" alt="">
                             </td>
@@ -100,11 +109,14 @@
                         <tr>
                             <td>31-Jan-2023​ Ali</td>
                             <td>FE-PF-31012023-003</td>
-                            <td>-</td>
+                            <td>Careem</td>
+                            <td>POS Financing</td>
+                            <td class="text-end">8,000</td>
+                            <td>Tahir Mehmood</td>
                             <td>In-process</td>
                             <td>Compare finance offers</td>
                             <td class="text-center">
-                                <img class="mx-2" src="./assets/icons/view.svg" alt="">
+                                <img class="mx-2 pointer" routerLink="/investor/application-review" src="./assets/icons/view.svg" alt="">
                                 <img class="mx-2" src="./assets/icons/edit.svg" alt="">
                                 <img class="mx-2" src="./assets/icons/delete.svg" alt="">
                             </td>

@@ -1,1 +1,124 @@
-<p>application-details works!</p>
+<section class="application-details mx-3 mb-3">
+    
+    <h1 class="fw-semibold mb-4">Gulf BROG General Contracting Co.</h1>
+
+    <div class="d-flex fw-semibold">
+
+        <div class="flex-fill">
+            <img src="./assets/company/gulf.svg">
+        </div>
+        <div class="flex-fill">
+            <div class="fs-12 text-secondary">Amount</div>
+            <div class="fs-18">SAR 1,500,000</div>
+        </div>
+        <div class="flex-fill">
+            <div class="fs-12 text-secondary">Term</div>
+            <div class="fs-18">4 Years</div>
+        </div>
+        <div class="flex-fill">
+            <div class="fs-12 text-secondary">Product</div>
+            <div class="fs-18">POS Finance</div>
+        </div>
+        <div class="flex-fill">
+            <div class="fs-12 text-secondary">Eligibility</div>
+            <div class="fs-18">
+              <img class="me-1" src="./assets/icons/star-green.svg">
+              <img class="me-1" src="./assets/icons/star-green.svg">
+              <img class="me-1" src="./assets/icons/star-green.svg">
+              <img class="me-1" src="./assets/icons/star-green.svg">
+              <img class="me-1" src="./assets/icons/star-gray.svg">
+            </div>
+        </div>
+        <div class="flex-fill">
+            <div class="fs-12 text-secondary">Status</div>
+            <div class="fs-18">
+              {{param ? 'Offer Accepted' : 'Under Review'}}
+            </div>
+        </div>
+        <div class="flex-fill">
+            <button class="btn btn-outline-primary me-2" routerLink="/investor/contact-center"> 
+              <img src="./assets/icons/contact.svg"> Contact
+            </button>
+            <button class="btn btn-outline-primary me-2" *ngIf="!param">Reject</button>
+            <button class="btn btn-primary" routerLink="/auth/otp/finance" *ngIf="!param">
+              Send Offer Letter
+            </button>
+        </div>
+
+    </div>
+
+    <div class="offer-accepted rounded p-4 my-3 fw-semibold fs-14" *ngIf="param">
+
+      <h4 class="pb-3">Offer Letter Accepted</h4>
+
+      <div class="row my-3">
+        <div class="col-3 text-secondary">Reviewed & Accepted by</div>
+        <div class="col-9">Shahzeb Ali Mohammad</div>
+      </div>
+
+      <div class="row my-3">
+        <div class="col-3 text-secondary">Acceptor’s Authority</div>
+        <div class="col-9">Authorized Signatory</div>
+      </div>
+
+      <div class="row my-3">
+        <div class="col-3 text-secondary">Mobile for OTP Verification</div>
+        <div class="col-9">+966 542 3321</div>
+      </div>
+
+      <div class="row my-3">
+        <div class="col-3 text-secondary">Email for OTP Verification</div>
+        <div class="col-9">shahzeb@gulf.com</div>
+      </div>
+
+      <div class="row my-3">
+        <div class="col-3 text-secondary">Mobile App e-Signature ID</div>
+        <div class="col-9">010 6080 1016</div>
+      </div>
+
+      <div class="row my-3">
+        <div class="col-3 text-secondary">Finance Reference No.</div>
+        <div class="col-9">POS-01022023-001</div>
+      </div>
+
+      <div class="row my-3">
+        <div class="col-3 text-secondary">Acceptance Date and Time</div>
+        <div class="col-9">01 Mar 2023 01:23:08 PM</div>
+      </div>
+
+    </div>
+
+    <div class="bg-white border rounded my-4 p-3">
+
+        <ul ngbNav #nav="ngbNav" class="nav-tabs nav-pills border-0 bg-light p-2 fs-14" [activeId]="param ? 3 : 1">
+            <li [ngbNavItem]="1" [disabled]="param && true || false">
+              <button ngbNavLink>
+                Application Details
+            </button>
+              <ng-template ngbNavContent>
+                <app-review-details></app-review-details>
+              </ng-template>
+            </li>
+            <li [ngbNavItem]="2" [disabled]="param && true || false">
+              <button ngbNavLink>
+                Eligibility & Exceptions
+            </button>
+              <ng-template ngbNavContent>
+                <app-application-eligibility></app-application-eligibility>
+              </ng-template>
+            </li>
+            <li [ngbNavItem]="3">
+              <button ngbNavLink>
+                Offer Letter
+            </button>
+              <ng-template ngbNavContent>
+                <app-application-offer [param]="param"></app-application-offer>
+              </ng-template>
+            </li>
+        </ul>
+
+        <div class="py-4" [ngbNavOutlet]="nav"></div>
+
+    </div>
+
+</section>

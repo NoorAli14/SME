@@ -20,9 +20,10 @@
                     <span class="small my-2 text-muted">
                         If you didn't receive a code! <b>Resend in 00:54</b>
                     </span>
-                    <a [routerLink]="param == 'company' ? ['/auth/setup-login-credentials'] : ['/auth/change-password']">
+                    <!-- <a [routerLink]="param == 'company' ? ['/auth/setup-login-credentials'] : ['/auth/change-password']">
                         <button class="btn btn-primary my-3" style="width: 100%;">Next</button>
-                    </a>
+                    </a> -->
+                    <button class="btn btn-primary my-3 w-100" (click)="navigateNext()">Next</button>
                 </div>
             </div>
         </div>
