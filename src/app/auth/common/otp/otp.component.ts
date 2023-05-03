@@ -34,8 +34,8 @@ export class OtpComponent implements OnInit{
   }
 
   navigateNext(){
-    let url = '/auth/change-password';
-    if(this.param == 'company') url = '/auth/change-password'
+    let url = '/auth/change-password/investor';
+    if(this.param == 'company') url = '/auth/change-password/company'
     else if(this.param == 'finance') url = '/investor/application-review/accepted' 
     this._router.navigate([url])
   }
