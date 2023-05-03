@@ -1,0 +1,243 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <a routerLink="/auth/complete-profile" class="text-decoration-none small">
+                < Back
+            </a>
+            <h2 class="py-4">Company Profile</h2>
+            <div class="row border">
+                <div class="col-3 border-end">
+                    <app-form-progress-list [navList]="navList" itemIndex="2">
+                    </app-form-progress-list>
+                </div>
+
+
+                <div class="px-5 col-md-9 p-5">
+
+                    <div class="my-3">
+                        <h4>Correspondence Address</h4>
+                    </div>
+
+                    <div class="fw-semibold my-3">
+                        Registered Address
+                    </div>
+
+                    <div class="p-3 fs-14 fw-semibold rounded bg-light">
+
+                        <div class="row">
+                            <span class="col-md-4 col-12 ">Building Number</span>
+                            <span class="col-md-8 col-12  ">6676</span>
+                        </div>
+
+                        <div class="row my-2">
+                            <span class="col-md-4 col-12 ">Additional Number</span>
+                            <span class="col-md-8 col-12 ">2345</span>
+                        </div>
+
+                        <div class="row my-2">
+                            <span class="col-md-4 col-12 ">Street Name</span>
+                            <span class="col-md-8 col-12 ">Muhammad Manazir Street</span>
+                        </div>
+
+                        <div class="row my-2">
+                            <span class="col-md-4 col-12 ">City</span>
+                            <span class="col-md-8 col-12 ">Al Riyadh</span>
+                        </div>
+
+                        <div class="row my-2">
+                            <span class="col-md-4 col-12 ">Zip Code</span>
+                            <span class="col-md-8 col-12 ">000000</span>
+                        </div>
+
+                        <div class="row my-2">
+                            <span class="col-md-4 col-12 ">Unit Number</span>
+                            <span class="col-md-8 col-12 ">101</span>
+                        </div>
+
+                        <div class="row my-2">
+                            <span class="col-md-4 col-12 ">District</span>
+                            <span class="col-md-8 col-12 ">Riyadhs</span>
+                        </div>
+
+                        <div class="row my-2">
+                            <span class="col-md-4 col-12 ">Website</span>
+                            <span class="col-md-8 col-12 ">www.webaddress.com</span>
+                        </div>
+
+                        <div class="row my-2">
+                            <span class="col-md-4 col-12 ">Email Address</span>
+                            <span class="col-md-8 col-12 ">infor@webaddress.com</span>
+                        </div>
+
+                        <div class="row my-2">
+                            <span class="col-md-4 col-12 ">Phone Number</span>
+                            <span class="col-md-8 col-12 ">+966 50 1234 567</span>
+                        </div>
+                    </div>
+
+                    <div class="form-check mt-2 fs-12 fw-semibold text-secondary">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Correspondence Address is not same as Registered Address
+                        </label>
+                    </div>
+
+                            <form>
+                                <div class="row mb-3">
+                                    <div class="form-group col-md-6 ">
+                                        <!-- <span class="small fw-bold" style="line-height: 3;">Building Number</span> -->
+                                        <label class="fs-14 fw-semibold">
+                                            Building Number
+                                        </label>                            
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="form-group col-md-6 ">
+                                        <!-- <span class="small" style="line-height: 3;">Additional Number</span> -->
+                                        <label class="fs-14 fw-semibold">
+                                            Additional Number
+                                        </label> 
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="form-group col-md-6 ">
+                                        <!-- <span class="small" style="line-height: 3;">Street Name</span> -->
+                                        <label class="fs-14 fw-semibold">
+                                            Street Name
+                                        </label>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <!-- <span class="small" style="line-height: 3;">City</span> -->
+                                        <label class="fs-14 fw-semibold">
+                                            City
+                                        </label>
+                                        <select class="form-control">
+                                            <option selected value="Dammam">Dammam</option>
+                                            <option>Street</option>
+                                            <option>Name</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="form-group col-md-6 ">
+                                        <!-- <span class="small" style="line-height: 3;">Zip Code</span> -->
+                                        <label class="fs-14 fw-semibold">
+                                            Zip Code
+                                        </label>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="form-group col-md-6 ">
+                                        <!-- <span class="small" style="line-height: 3;">Unit Number</span> -->
+                                        <label class="fs-14 fw-semibold">
+                                            Unit Number
+                                        </label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="form-group col-md-6">
+                                        <!-- <span class="small" style="line-height: 3;">District</span> -->
+                                        <label class="fs-14 fw-semibold">
+                                            District
+                                        </label>
+                                        <select class="form-control">
+                                            <option selected value="Dammam">Dammam</option>
+                                            <option>Street</option>
+                                            <option>Name</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group col-md-6 ">
+                                        <!-- <span class="small" style="line-height: 3;">Website</span> -->
+                                        <label class="fs-14 fw-semibold">
+                                            Website
+                                        </label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="form-group col-md-6 ">
+                                        <!-- <span class="small" style="line-height: 3;">Email Address</span> -->
+                                        <label class="fs-14 fw-semibold">
+                                            Email Address
+                                        </label>
+                                        <input type="email" class="form-control">
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <!-- <span for="phone" class="small" style="line-height: 3;">Phone Number</span> -->
+                                        <label class="fs-14 fw-semibold">
+                                            Phone Number
+                                        </label>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                    <img src="../../../../assets/images/saudia_flag.png">
+                                                    &nbsp;+966
+                                                </span>
+                                            </div>
+                                            <input type="text" class="form-control"
+                                            aria-label="Text input with dropdown button">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="fw-semibold my-2">
+                                    Contact Person
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="form-group col-md-6 ">
+                                        <!-- <span class="small" style="line-height: 3;">Name</span> -->
+                                        <label class="fs-14 fw-semibold">
+                                            Name
+                                        </label>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="form-group col-md-6 ">
+                                        <!-- <span class="small" style="line-height: 3;">Email Address</span> -->
+                                        <label class="fs-14 fw-semibold">
+                                            Email Address
+                                        </label>
+                                        <input type="email" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="form-group col-md-6">
+                                        <!-- <span for="phone" class="small" style="line-height: 3;">Phone Number</span> -->
+                                        <label class="fs-14 fw-semibold">
+                                            Phone Number
+                                        </label>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                    <img src="../../../../assets/images/saudia_flag.png">
+                                                    &nbsp;+966
+                                                </span>
+                                            </div>
+                                            <input type="text" class="form-control"
+                                                aria-label="Text input with dropdown button">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <button routerLink="/auth/complete-profile-address-ownership" type="button" class="btn btn-primary my-3" style="width: 20%;">Next</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

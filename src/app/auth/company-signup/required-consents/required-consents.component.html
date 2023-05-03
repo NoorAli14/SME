@@ -64,12 +64,9 @@
                 Publish open application and wait for banks to offer financing or apply directly 
             </span>
             <div>
-                <a routerLink="/home">
-                    <button class="btn btn-primary my-3">Complete Profile</button>
-                </a>
-                <a routerLink="/home">
-                    <button type="button" class="btn btn-outline-primary m-3">Go to dashboard</button>
-                </a>
+                    <button class="btn btn-primary my-3" (click)="completeProfile()">Complete Profile</button>
+                
+                <button class="btn btn-outline-primary m-3" (click)="goToDashboard()">Go to dashboard</button>
             </div>
         </div>
     </div>
