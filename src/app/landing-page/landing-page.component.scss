@@ -5,7 +5,7 @@
         width: 100%;
     }
     .content-padding{
-        padding: 24px 144px;
+        padding: 48px 144px;
     }
     .bg-light-blue{
         background-color: rgba(191, 209, 251, 0.6);
@@ -24,6 +24,9 @@
     .h-600-p{
         height: 600px;
     }
+    .w-40-p{
+        width: 40px;
+    }
     .absolute-dots{
         left: -15%;
         top: 35%;
@@ -40,5 +43,10 @@
     }
     .fs-22{
         font-size: 22px;
+    }
+    .count-circle{
+        width: 108px;
+        height: 108px;
+        padding-top: 30px;
     }
 }
