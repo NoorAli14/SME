@@ -16,7 +16,12 @@ export const appRoutes: Routes = [
       import('./features/forms/forms-routes').then((m) => m.formRoutes),
   },
   {
+    path: 'client',
+    loadComponent: () =>
+      import('./landing-page/landing-page.component').then((c) => c.LandingPageComponent),
+  },
+  {
     path: '**',
-    redirectTo: 'auth',
+    redirectTo: '',
   },
 ];
