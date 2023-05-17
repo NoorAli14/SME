@@ -1,0 +1,24 @@
+.offer-letters{
+    .nav-pills{
+        .nav-link{
+            border: 1px solid rgba(179, 179, 182, 0.49);
+            color: #000000;
+            background-color: #fff;
+            padding: 4px 16px 4px 4px;
+            margin-right: 16px;
+            &.active{
+                background-color: unset;
+                border-color:#1A47E5;
+                color: #1A47E5;
+            }
+            img{
+                padding: 6px 8px;;
+                background-color: #F2F7FF;
+                border-radius: 6px;
+            }
+        }
+    }
+    .option-bar{
+        width: 320px;
+    }
+}

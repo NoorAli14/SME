@@ -19,7 +19,7 @@ export class SideBarComponent implements OnInit{
   ngOnInit(): void {  
     if(this._router.url.includes('investor')){
       this.navList = [
-        {name: 'Home', iconUrl: './assets/icons/sidebar/home.svg', url: '/investor/home'},
+        {name: 'Dashboard', iconUrl: './assets/icons/sidebar/home.svg', url: '/investor/home'},
         {name: 'Marketplace', iconUrl: './assets/icons/sidebar/investor/marketplace.svg', url: '/investor/marketplace'},
         {name: 'Application Manager', iconUrl: './assets/icons/sidebar/investor/application_manager.svg', url: '/investor/application-manager'},
         {name: 'Product Management', iconUrl: './assets/icons/sidebar/finance-calculator.svg', url: '/investor/product-management'},
@@ -27,7 +27,8 @@ export class SideBarComponent implements OnInit{
       ]
     }else{
       this.navList = [
-        {name: 'Home', iconUrl: './assets/icons/sidebar/home.svg', url: '/home'},
+        {name: 'Dashboard', iconUrl: './assets/icons/sidebar/home.svg', url: '/home'},
+        {name: 'Offer Letters', iconUrl: './assets/icons/sidebar/company-info.svg', url: '/offer-letters'},
         {name: 'Company Information', iconUrl: './assets/icons/sidebar/company-info.svg', url: '/company-information'},
         {name: 'Finance Application', iconUrl: './assets/icons/sidebar/finance-application.svg', url: '/finance-application'},
         {name: 'Finance Marketplace', iconUrl: './assets/icons/sidebar/finance-marketplace.svg', url: '/finance-marketplace'},

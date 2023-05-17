@@ -14,6 +14,13 @@ export const featuresRoutes: Routes = [
           ),
       },
       {
+        path: 'offer-letters',
+        loadComponent: () =>
+          import('./borrower/offer-letters/offer-letters.component').then(
+            (c) => c.OfferLettersComponent
+          ),
+      },
+      {
         path: 'compare-offers',
         loadComponent: () =>
           import('./borrower/home/compare-offers/compare-offers.component').then(
