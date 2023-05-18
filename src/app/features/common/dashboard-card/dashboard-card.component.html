@@ -1,0 +1,18 @@
+<div class="card" style="width: 100%;">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-8">
+          <div>
+            {{title.label}}
+          </div>
+          <h6>{{title.value}}</h6>
+        </div>
+        <div class="col-4">
+          <select class="form-control p-1" style="font-size: 12px;">
+            <option selected [value]="option[0]">{{option[0]}}</option>
+          </select>
+        </div>
+        <app-pie-chart></app-pie-chart>
+      </div>
+    </div>
+  </div>

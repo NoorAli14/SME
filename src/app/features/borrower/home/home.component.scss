@@ -1,3 +1,41 @@
-.home{
+.circle {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
     
+}
+.vl {
+    border-left: 4px solid rgb(172 172 172);
+    height: 50px;
+    margin-left: 14px;
+}
+
+.highlight{
+    padding: 8px 12px;
+    border-radius: 24px;
+    font-size: 14px;
+}
+
+.purple-highlight{
+    background: #8000804d;
+    color: purple;
+}
+
+.red-highlight{
+    background: #ca050540;
+    color: #ca0505;
+}
+
+.green-highlight{
+    background: #00800036;
+    color: green;
+}
+
+.orange-highlight{
+    color: #c98302;
+    background: #ffa50038;
+}
+
+td, tr{
+    border: 0;
 }
