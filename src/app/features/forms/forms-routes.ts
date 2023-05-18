@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 
 export const formRoutes: Routes = [
   {
-    path: 'finance-application',
+    path: 'finance-application/:screen',
     loadComponent: () =>
       import('./finance-application/new-finance-application/new-finance-application.component').then(
         (c) => c.NewFinanceApplicationComponent
@@ -64,6 +64,21 @@ export const formRoutes: Routes = [
         (c) => c.PublishedComponent
       ),
   },
-
+  {
+    path: 'invoice-finance-application',
+    loadComponent: () =>
+      import('./invoice-finance-application/invoice-finance-application.component').then(
+        (c) => c.InvoiceFinanceApplicationComponent
+      ),
+  },
+  {
+    path: 'invoice-review-application',
+    loadComponent: () =>
+      import('./invoice-review-application/invoice-review-application.component').then(
+        (c) => c.InvoiceReviewApplicationComponent
+      ),
+  },
+ 
+  
   
 ];

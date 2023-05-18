@@ -25,7 +25,7 @@
                     </div>
                     <div class="form flex-fill w-75">
                         <!-- <app-finance-application-form [data]="data"></app-finance-application-form> -->
-                        <form>
+                        <form >
                             <h3 class="mb-3">Select Product</h3>
                             <div class="form-group">
                                 <span class="text-secondary small">
@@ -39,9 +39,9 @@
                                 </div> -->
                                 <div class="btn-group my-3" role="group" aria-label="Vertical radio toggle button group">
                                     <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off" checked>
-                                    <label class="btn btn-outline-primary rounded me-3" for="vbtn-radio1">Invoice Financing</label>
+                                    <label class="btn btn-outline-primary rounded me-3" for="vbtn-radio1" (click)="onRadioChange('invoice')">Invoice Discounting</label>
                                     <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2" autocomplete="off">
-                                    <label class="btn btn-outline-primary rounded" for="vbtn-radio2">POS Financing</label>
+                                    <label class="btn btn-outline-primary rounded" for="vbtn-radio2" (click)="onRadioChange('pos')">POS Financing</label>
                                 </div>
                             </div>
                             <div class="fs-18 my-2">POS Financing</div>
@@ -49,7 +49,7 @@
                                 POS financing allows business owner of small and medium enterprises that have been in business for a year or more to obtain immediate financing solutions to help them develop and expand their businesses, according to the cash flow generated through the enterprise's POS.
                             </span>
                             <div>
-                                <button type="button" class="btn btn-primary my-3 w-100" [routerLink]="['/form/finance-application-eligibility']" routerLinkActive="router-link-active">Next</button>
+                                <button type="button" class="btn btn-primary my-3 w-100" [routerLink]="['/form/finance-application/'+buttonClicked]" routerLinkActive="router-link-active">Next</button>
                             </div>
                         </form>
                     </div>

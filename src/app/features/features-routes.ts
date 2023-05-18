@@ -35,7 +35,7 @@ export const featuresRoutes: Routes = [
           ),
       },
       {
-        path: 'finance-application',
+        path: 'finance-application/:screen',
         loadComponent: () =>
           import('./borrower/finance-application/finance-application.component').then(
             (c) => c.FinanceApplicationComponent
